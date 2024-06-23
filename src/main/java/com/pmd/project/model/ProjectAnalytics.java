@@ -4,7 +4,13 @@ public class ProjectAnalytics {
   private double progressPercentage;
   private double budgetUtilization;
 
-  // Getters and Setters
+  public ProjectAnalytics() {
+  }
+
+  public ProjectAnalytics(double progressPercentage, double budgetUtilization) {
+    this.progressPercentage = progressPercentage;
+    this.budgetUtilization = budgetUtilization;
+  }
 
   public double getProgressPercentage() {
     return progressPercentage;

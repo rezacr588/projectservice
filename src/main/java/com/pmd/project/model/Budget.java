@@ -6,6 +6,14 @@ public class Budget {
 
   // Getters and Setters
 
+  Budget() {
+  }
+
+  public Budget(double total, double spent) {
+    this.total = total;
+    this.spent = spent;
+  }
+
   public double getTotal() {
     return total;
   }

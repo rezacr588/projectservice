@@ -7,6 +7,15 @@ public class Milestone {
   private String name;
   private Date dueDate;
 
+  public Milestone() {
+  }
+
+  public Milestone(String id, String name, Date dueDate) {
+    this.id = id;
+    this.name = name;
+    this.dueDate = dueDate;
+  }
+
   // Getters and Setters
 
   public String getId() {

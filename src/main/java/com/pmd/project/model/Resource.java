@@ -5,7 +5,14 @@ public class Resource {
   private String name;
   private String role;
 
-  // Getters and Setters
+  public Resource() {
+  }
+
+  public Resource(String id, String name, String role) {
+    this.id = id;
+    this.name = name;
+    this.role = role;
+  }
 
   public String getId() {
     return id;

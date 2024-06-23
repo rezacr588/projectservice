@@ -7,6 +7,15 @@ public class Risk {
 
   // Getters and Setters
 
+  public Risk() {
+  }
+
+  public Risk(String id, String description, String mitigationPlan) {
+    this.id = id;
+    this.description = description;
+    this.mitigationPlan = mitigationPlan;
+  }
+
   public String getId() {
     return id;
   }
