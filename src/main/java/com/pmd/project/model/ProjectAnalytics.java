@@ -1,16 +1,21 @@
 package com.pmd.project.model;
 
+import org.springframework.data.annotation.Id;
+import org.springframework.data.mongodb.core.mapping.Document;
+
+@Document(collection = "project_analytics")
 public class ProjectAnalytics {
+  @Id
+  private String id;
   private double progressPercentage;
   private double budgetUtilization;
 
-  public ProjectAnalytics() {
+  // Getters and Setters
+  public String getId() {
+    return id;
   }
 
-  public ProjectAnalytics(double progressPercentage, double budgetUtilization) {
-    this.progressPercentage = progressPercentage;
-    this.budgetUtilization = budgetUtilization;
-  }
+  // No setter for ID if you want it to be immutable
 
   public double getProgressPercentage() {
     return progressPercentage;
